@@ -1,1 +1,5 @@
 us\com\trio\dev\EmailSyncApplication.class
+us\com\trio\dev\controller\EmailSyncController.class
+us\com\trio\dev\service\EmailSyncService.class
+us\com\trio\dev\client\TrioChallengeClient.class
+us\com\trio\dev\dto\TrioChallengeResponseDto.class
