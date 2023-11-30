@@ -7,7 +7,7 @@ import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 @Data
-public class TrioChallengeResponseDto {
+public class MockApiResponseDto {
 	private String firstName;
 	private String lastName;
 	private String email;

@@ -4,11 +4,13 @@ import java.util.List;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
-import us.com.trio.dev.dto.TrioChallengeResponseDto;
+import us.com.trio.dev.dto.MailchimpInputDto;
+import us.com.trio.dev.dto.MockApiResponseDto;
 
-@FeignClient(name = "${feign.client.name}", url = "${feign.client.url}")
+@FeignClient(name = "${mockapi.client.name}", url = "${mockapi.client.url}")
 public interface TrioChallengeClient {
 	@GetMapping("/contacts")
-	public List<TrioChallengeResponseDto> getContacts();	
+	public List<MockApiResponseDto> getContacts();
 }
