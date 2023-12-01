@@ -8,7 +8,7 @@ import feign.auth.BasicAuthRequestInterceptor;
 @Configuration
 public class FeignClientConfig {
 	
-	@Value("${mailchimp.apykey}")
+	@Value("${mailchimp.apikey}")
 	private String apikey;
 
     @Bean

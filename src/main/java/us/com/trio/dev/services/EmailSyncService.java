@@ -10,10 +10,9 @@ import us.com.trio.dev.clients.MailChimpClient;
 import us.com.trio.dev.clients.TrioChallengeClient;
 import us.com.trio.dev.dto.MailchimpInputDto;
 import us.com.trio.dev.dto.MailchimpResponseDto;
-import us.com.trio.dev.dto.MockApiResponseDto;
-import us.com.trio.dev.model.SyncedContact;
 import us.com.trio.dev.dto.TrioDevReponseDto;
 import us.com.trio.dev.mapper.MailchimpMapper;
+import us.com.trio.dev.model.SyncedContact;
 
 @Service
 @RequiredArgsConstructor
@@ -23,12 +22,8 @@ public class EmailSyncService {
 	private final MailchimpMapper mailchimpMapper;
 	Integer totalSyncedContacts;
 
-	public List<MockApiResponseDto> fetchData() {
-		return trioChallengeClient.getContacts();
-	}
-
 	public TrioDevReponseDto syncData() {
-		totalSyncedContacts = 0;
+ 		totalSyncedContacts = 0;
 		TrioDevReponseDto trioDevResponse = TrioDevReponseDto.builder().build();
 		trioDevResponse.setContacts(new ArrayList<>());
 		
