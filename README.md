@@ -4,7 +4,7 @@ Challenge for trio dev company
 
 This is an API that sync contacts from MockAPI to Mailchimp
 
-API Key: 432f1f9a0b911ee171d0a73ed7cbc637-us21 
+API Key: 7b506dd4e4a51f2a65c799e7fa550367-us21 
 Server: us21
 list-id: 7dc9f0a17f
 
